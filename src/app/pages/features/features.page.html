@@ -1,0 +1,13 @@
+<section class="section-wrap pt-16">
+  <p class="text-sm font-semibold uppercase tracking-wide text-sky-700">Features</p>
+  <h1 class="mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Everything needed for a clean production baseline</h1>
+  <p class="mt-5 max-w-3xl text-base leading-7 text-slate-600">
+    This setup keeps the architecture small and intentional while including deployment automation and responsive UI foundations.
+  </p>
+
+  <div class="mt-10 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+    @for (feature of featureCards; track feature.title) {
+      <app-card [title]="feature.title" [description]="feature.description"></app-card>
+    }
+  </div>
+</section>

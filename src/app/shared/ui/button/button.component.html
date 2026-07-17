@@ -1,0 +1,15 @@
+@if (href()) {
+  <a
+    [routerLink]="href()"
+    [class]="variant() === 'primary' ? 'btn-primary' : 'btn-secondary'"
+  >
+    {{ label() }}
+  </a>
+} @else {
+  <button
+    type="button"
+    [class]="variant() === 'primary' ? 'btn-primary' : 'btn-secondary'"
+  >
+    {{ label() }}
+  </button>
+}

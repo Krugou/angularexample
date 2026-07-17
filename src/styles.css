@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html,
+	body {
+		@apply bg-slate-50 text-slate-900 antialiased;
+	}
+
+	body {
+		@apply m-0;
+		font-family: "Plus Jakarta Sans", "Segoe UI", sans-serif;
+	}
+}
+
+@layer components {
+	.section-wrap {
+		@apply mx-auto w-full max-w-6xl;
+	}
+
+	.card-surface {
+		@apply rounded-2xl border border-slate-200 bg-white shadow-sm;
+	}
+
+	.btn-primary {
+		@apply inline-flex items-center justify-center rounded-xl bg-sky-700 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-sky-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400;
+	}
+
+	.btn-secondary {
+		@apply inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-5 py-2.5 text-sm font-semibold text-slate-800 transition hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-300;
+	}
+
+	.nav-link {
+		@apply rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-slate-900;
+	}
+
+	.nav-link-active {
+		@apply bg-sky-100 text-sky-800;
+	}
+}
